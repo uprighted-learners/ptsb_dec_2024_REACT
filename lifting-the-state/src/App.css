@@ -1,0 +1,247 @@
+:root {
+  --color-primary: rgba(93, 188, 247, 1);
+  --color-secondary: rgba(116, 199, 250, 0.7);
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(116, 199, 250, 0.3);
+
+  height: fit-content;
+  min-height: 100dvh;
+  padding: 0;
+  margin: 0;
+}
+
+.App h1 {
+  padding-top: 2em;
+}
+
+.hello-name {
+  margin-top: 2em;
+}
+
+h1 {
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  filter: drop-shadow(0.1em 0.1em 0.1em whitesmoke);
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  position: fixed;
+  filter: drop-shadow(0.1em 0.1em 0.2em black);
+  z-index: 10;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+nav p {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5em;
+  border-radius: 0.4em;
+  transition: all 0.3s ease-in-out;
+}
+
+nav p:first-child {
+  background-color: white;
+}
+nav p:hover {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(83, 150, 223, 0.7);
+  box-sizing: border-box;
+}
+
+.nav-user {
+  position: absolute;
+  margin-top: 4.5em;
+  background-color: rgba(93, 188, 247, 1);
+  border: 1px solid black;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  right: 0.5em;
+  top: 0.1em;
+}
+
+nav button {
+  padding-inline: 0.8em;
+  border-radius: 0.3em;
+  font-size: 1.1em;
+  background-color: white;
+}
+nav button:hover {
+  padding-inline: 0.8em;
+  border-radius: 0.3em;
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 100, 100, 0.8);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.med-width {
+  margin: 0 auto;
+}
+
+.auth-form {
+  padding-top: 7em;
+  gap: 2.5em;
+  margin-inline: auto;
+  max-width: 400px;
+  width: 90%;
+}
+.auth-form:before {
+  content: "";
+  background-image: url(https://cdn0.iconfinder.com/data/icons/basic-ui-elements-2-1-flat-style/512/Basic_UI_Elements_-_2.1_-_Flat_Style_-_36_-_Expand-11-1024.png);
+  background-position: center;
+  background-size: cover;
+  height: 15em;
+  min-width: 15em;
+  width: 60%;
+  border-radius: 200em;
+  margin-inline: auto;
+  filter: drop-shadow(0.2em 0.2em 0.2em black);
+}
+
+button {
+  outline: none;
+  background-color: var(--color-secondary);
+  border-color: transparent;
+}
+
+#auth-form_btn {
+  background-color: var(--color-secondary);
+  border-radius: 0.5em;
+}
+#auth-form_btn:hover {
+  background-color: var(--color-primary);
+}
+#auth-form_btn:focus {
+  background-color: var(--color-primary);
+}
+
+form label {
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  font-size: 1.7em;
+}
+form input {
+  padding: 0.3em;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+  text-align: center;
+  filter: drop-shadow(0.01em 0.01em 0.1em black);
+  border-color: transparent;
+}
+form button {
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+
+.emoji-lg {
+  font-size: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+.home {
+  border: 0.4em solid;
+  border-color: var(--color-primary);
+  margin-top: 8em;
+  margin-bottom: 2em;
+  margin-inline: 1em;
+  border-radius: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 40em;
+  background-color: rgba(0, 0, 0, 0.001);
+}
+
+.home button {
+  margin-bottom: 1em;
+  margin-left: 0.4em;
+  border-radius: 0.4em;
+  padding: 0.25em;
+  width: 4em;
+}
+.home button:hover {
+  background-color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  font-family: "Protest Strike", sans-serif;
+  font-style: normal;
+  padding: 0;
+  width: 90%;
+  max-width: 30em;
+  list-style-type: none;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+li {
+  border: 0.2em solid;
+  border-color: var(--color-secondary);
+  border-radius: 0.4em;
+  background-color: rgba(0, 0, 0, 0.04);
+  margin-bottom: 0.2em;
+  filter: drop-shadow(0.01em 0.01em 0.02em var(--color-primary));
+  position: relative;
+  font-size: 1.1em;
+  max-height: 2em;
+}
+li:hover {
+  background-color: var(--color-primary);
+  border-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.01s ease-in-out;
+}
+
+li:hover > #item-name {
+  transition: all 0.01s ease-in-out;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.del {
+  position: absolute;
+  max-width: 2em;
+  transform: scale(0.7);
+  top: 0;
+  left: 0;
+  padding: 0.2em;
+  margin: 0;
+  background-color: white;
+  border-radius: 0.3em;
+  border-width: 0.1em 0.1em 0.1em 0.1em;
+  border-color: black;
+  border-style: solid;
+  cursor: pointer;
+}
+
+/* .del:hover {
+  transform: scale(0.8);
+} */

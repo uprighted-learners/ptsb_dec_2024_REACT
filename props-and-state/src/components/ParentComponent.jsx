@@ -1,6 +1,7 @@
 import ChildComponent from "./ChildComponent";
 
 function ParentComponent() {
+
   return (
     <>
       <p>Hello from parent component</p>
@@ -23,7 +24,6 @@ function ParentComponent() {
         anotherProp="This is another prop!"
         bColor="limegreen"
       />
-
 
     </>
   );
