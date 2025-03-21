@@ -3,10 +3,11 @@
   --color-secondary: rgba(116, 199, 250, 0.7);
 }
 
+
 .App {
   text-align: center;
   background-color: rgba(116, 199, 250, 0.3);
-
+  
   height: fit-content;
   min-height: 100dvh;
   padding: 0;
@@ -31,12 +32,19 @@ button {
   cursor: pointer;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   border: solid 1px black;
   display: flex;
   justify-content: center;
   gap: 5%;
   position: fixed;
+  left: 0;
+  top: 0;
   filter: drop-shadow(0.1em 0.1em 0.2em black);
   z-index: 10;
   width: 100%;
