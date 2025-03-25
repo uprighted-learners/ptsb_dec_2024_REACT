@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import FetchGhibli from "./FetchGhibli"
+
 
 /*
     useEffect
@@ -59,6 +61,12 @@ const HookUseEffect = () => {
     <div>
       <h3>{count}</h3>
       <button onClick={() => setCount((prev) => prev + 1)}>Add</button>
+
+
+      <div>
+        {/* fetch ghibli component here */}
+        <FetchGhibli />
+      </div>
     </div>
   );
 };
