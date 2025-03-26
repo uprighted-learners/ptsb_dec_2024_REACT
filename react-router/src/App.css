@@ -1,0 +1,17 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  width: 100vw
+}
+
+.page {
+  background: blue;
+  min-height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

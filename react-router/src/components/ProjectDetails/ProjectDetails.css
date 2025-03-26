@@ -1,0 +1,13 @@
+.project-details{
+    background-color: green;
+    border-radius: 2em;
+    margin-top: 1em;
+    height: 40dvh;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-shadow: .1em .1em .1em black;
+}
