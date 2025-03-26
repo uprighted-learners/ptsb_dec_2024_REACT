@@ -11,9 +11,12 @@ nav{
 }
 
 .active-link {
-    color: white;
+    color: rebeccapurple;
     font-size: 1.3em;
     /* transform: scale(1.2); */
     transition: all .3s ease-in-out;
 }
 
+a {
+    color: white;
+}
