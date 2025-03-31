@@ -1,0 +1,22 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 13em;
+  max-width: 13em;
+}
+
+h2 {
+  margin: 0;
+}
+
+h4 {
+  color: red;
+  margin: 0;
+}
