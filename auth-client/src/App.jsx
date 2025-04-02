@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Auth from "./components/Auth";
+import PostIndex from "./components/PostIndex";
 
 function App() {
   const [token, setToken] = useState("");
@@ -15,15 +16,45 @@ function App() {
 
   // Logout handler
   const handleLogout = () => {
-    localStorage.removeItem("token")
-    setToken("")
-  }
+    localStorage.removeItem("token");
+    setToken("");
+  };
+
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token");
+    if (storedToken) {
+      setToken(storedToken);
+    }
+  }, []);
 
   return (
     <>
-      {token && <button style={{position:"absolute", top: 0, left: 0}} onClick={handleLogout}>Logout</button>}
+      {token && (
+        <button
+          style={{ position: "absolute", top: 0, left: 0 }}
+          onClick={handleLogout}
+        >
+          Logout
+        </button>
+      )}
       <Routes>
-        <Route path="/" element={<Auth updateToken={updateToken} />} />
+        <Route
+          path="/"
+          element={
+            !token ? (
+              <Auth updateToken={updateToken} />
+            ) : (
+              <Navigate to="/posts" />
+            )
+          }
+        />
+
+        <Route
+          path="/posts"
+          element={token ? <PostIndex /> : <Navigate to="/" />}
+        />
+  
+
       </Routes>
     </>
   );
