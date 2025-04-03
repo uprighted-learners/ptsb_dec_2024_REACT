@@ -9,14 +9,16 @@ function App() {
   const [token, setToken] = useState("");
 
   // Update state token variable, and store it in localStorage
-  const updateToken = (passedToken) => {
+  const updateToken = (passedToken, uid) => {
     localStorage.setItem("token", passedToken);
+    localStorage.setItem("uid", uid);
     setToken(passedToken);
   };
 
   // Logout handler
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("uid");
     setToken("");
   };
 

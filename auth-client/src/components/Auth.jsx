@@ -39,7 +39,7 @@ const Auth = ({ updateToken }) => {
       console.log(data);
       if (data.Error) throw new Error(data.Error);
 
-      updateToken(data.Token);
+      updateToken(data.Token, data.User._id);
       navigate("/posts")
     } catch (err) {
       console.log(err);

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Post from "./Post";
+import CreatePost from "./CreatePost";
 
 const PostIndex = () => {
   const [posts, setPosts] = useState([]);
@@ -20,11 +21,13 @@ const PostIndex = () => {
     setPosts(data.Results);
   };
 
-  return <div>
-
-  {posts.map((post) => <Post key={post._id} post={post} />).reverse()}
-
-  </div>;
+  return (
+    <div>
+      {/* Post Create component */}
+      <CreatePost fetchPosts={fetchPosts} />
+      {posts.map((post) => <Post key={post._id} post={post} />).reverse()}
+    </div>
+  );
 };
 
 export default PostIndex;
