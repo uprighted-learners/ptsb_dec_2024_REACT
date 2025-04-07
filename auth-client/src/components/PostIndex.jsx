@@ -25,7 +25,8 @@ const PostIndex = () => {
     <div>
       {/* Post Create component */}
       <CreatePost fetchPosts={fetchPosts} />
-      {posts.map((post) => <Post key={post._id} post={post} />).reverse()}
+      {/* Rendering out each post from array */}
+      {posts.map((post) => <Post key={post._id} post={post} fetchPosts={fetchPosts} />).reverse()}
     </div>
   );
 };
