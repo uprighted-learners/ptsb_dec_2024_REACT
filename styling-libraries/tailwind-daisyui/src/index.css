@@ -13,4 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import 'tailwindcss';
+/* ? Import tailwind */
+@import "tailwindcss";
+/* @plugin "daisyui" {
+  themes: light --default, dark --prefersdark, all;
+} */
+@plugin "daisyui" {
+  themes: all;
+}
+/*? Creating a custom theme */
+@plugin "daisyui/theme" {
+  name: "CustomTheme";
+  default: true;
+  prefersdark: false; 
+  color-scheme: light;
+  --color-primary: blue;
+  --color-secondary: purple;
+  --color-accent: red;
+}

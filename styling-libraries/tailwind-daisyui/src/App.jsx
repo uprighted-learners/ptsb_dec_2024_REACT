@@ -1,13 +1,13 @@
-
+import TailwindCSS from './TailwindCSS'
 import './App.css'
-import TailwindCSS from './components/TailwindCSS'
+import DaisyUI from './DaisyUI'
 
 function App() {
 
-
   return (
     <>
-     <TailwindCSS />
+      <TailwindCSS />
+      {/* <DaisyUI /> */}
     </>
   )
 }

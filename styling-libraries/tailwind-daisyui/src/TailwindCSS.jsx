@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const TailwindCSS = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      {/* <h1 className="text-3xl font-bold underline text-purple-800">TailwindCSS!</h1> */}
+    const [open, setOpen] = useState(false)
+    return (
+        <>
 
-      <nav className="bg-primary text-black px-4 shadow-md sticky top-0 z-50 py-4">
+            {/* <h1 className="text-7xl font-bold underline text-purple-700 mb-5">
+                Tailwind CSS!
+            </h1> */}
+
+            <nav className="bg-primary text-black px-4 shadow-md sticky top-0 z-50 py-4">
                 <div className="flex items-center justify-between max-w-6xl mx-auto">
                     <div className="text-xl font-bold">Tailwind CSS</div>
                     <div className="md:hidden">
@@ -84,8 +87,9 @@ const TailwindCSS = () => {
                     </div>
                 </div>
             </div>
-    </>
-  );
-};
 
-export default TailwindCSS;
+        </>
+    )
+}
+
+export default TailwindCSS
