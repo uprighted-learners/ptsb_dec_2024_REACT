@@ -8,7 +8,6 @@ const TailwindCSS = () => {
             {/* <h1 className="text-7xl font-bold underline text-purple-700 mb-5">
                 Tailwind CSS!
             </h1> */}
-
             <nav className="bg-primary text-black px-4 shadow-md sticky top-0 z-50 py-4">
                 <div className="flex items-center justify-between max-w-6xl mx-auto">
                     <div className="text-xl font-bold">Tailwind CSS</div>
