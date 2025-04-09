@@ -29,3 +29,12 @@
   themes: all;
 }
 
+/*? Custom Theme */
+
+@plugin "daisyui/theme" {
+  name: "CustomTheme";
+  default: true;
+  --color-primary: blue;
+  --color-secondary: purple;
+  --color-accent: red;
+}
