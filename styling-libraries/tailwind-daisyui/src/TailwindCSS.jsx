@@ -52,7 +52,7 @@ const TailwindCSS = () => {
                 </div>
             </section>
 
-            <div className="flex items-center justify-center bg-primary px-4 py-8">
+            <div className="flex  items-center justify-center bg-primary px-4 py-8">
                 <form className="bg-white text-black shadow-md rounded-lg p-8 w-full max-w-sm border border-accent">
                     <h2 className="text-2xl font-bold text-base mb-6">Login</h2>
                     <input

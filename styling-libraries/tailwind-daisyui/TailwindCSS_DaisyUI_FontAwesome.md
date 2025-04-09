@@ -66,6 +66,7 @@ npm install daisyui@latest
 
 **Documentation**:  
 [Font Awesome Free Icons](https://fontawesome.com/search?ic=free)
+https://docs.fontawesome.com/web/setup/get-started
 
 1. Install the required Font Awesome packages:
 

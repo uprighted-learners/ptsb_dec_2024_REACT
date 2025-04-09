@@ -15,4 +15,17 @@
 
 /* ? Import tailwind */
 @import "tailwindcss";
+/* https://colorkit.co/ */
+/* If using daisyUI, you can ignore setting a custom theme for tailwindCSS */
+/* @theme {
+  --color-primary: steelblue;
+  --color-base: rebeccapurple;
+  --color-secondary: red;
+  --color-accent: teal;
+} */
+
+/* ? Importing daisyUI */
+@plugin 'daisyui' {
+  themes: all;
+}
 
