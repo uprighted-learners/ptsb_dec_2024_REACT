@@ -16,10 +16,3 @@
 /* ? Import tailwind */
 @import "tailwindcss";
 
-@theme {
-  --color-primary: steelblue;
-  --color-base: rebeccapurple;
-  --color-secondary: red;
-  --color-accent: teal;
-}
-
